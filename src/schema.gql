@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Article {
+  _id: String!
+  title: String!
+}
+
+type Query {
+  articles: [Article!]!
+  article(_id: String!): Article!
+  me: String
+}
+
+type Mutation {
+  login: String!
+  logout: Boolean!
+}
