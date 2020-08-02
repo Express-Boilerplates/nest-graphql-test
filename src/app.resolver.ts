@@ -45,7 +45,7 @@ export class AppResolver {
     res.cookie('token', 'mytoken', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      sameSite: false,
+      sameSite: "none",
       maxAge: 1000 * 60 * 60 * 24 * 365, // 1 year cookie
     });
 
